@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "9131bd1e-b7c5-4180-97a8-05b45a5c129f",
+		"name": "EventBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28621334",
+		"_collection_link": "https://speeding-sunset-151948.postman.co/workspace/intrviewapi~1bee65ef-03e5-484e-a7aa-214af946fa94/collection/28621334-9131bd1e-b7c5-4180-97a8-05b45a5c129f?action=share&source=collection_link&creator=28621334"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "userLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {  \"email\": \"admin12345@gmail.com\",\r\n    \"password\": \"admin@12345\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/api/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "event/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {  \"email\": \"admin12345@gmail.com\",\r\n    \"password\": \"admin@12345\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/api/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "eventslist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {  \"email\": \"admin12345@gmail.com\",\r\n    \"password\": \"admin@12345\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/api/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "event/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {  \"email\": \"admin12345@gmail.com\",\r\n    \"password\": \"admin@12345\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/api/event/events?start=2024-12-01&end=2024-12-31",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"event",
+						"events"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2024-12-01"
+						},
+						{
+							"key": "end",
+							"value": "2024-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "event/eventupdate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n  \"name\": \"Updated Event Name\",\r\n  \"date\": \"2024-12-20T12:00:00Z\",\r\n  \"capacity\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/api/event/eventsupdate/675b1f0a5082987df4597444"
+			},
+			"response": []
+		},
+		{
+			"name": "event/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {  \"email\": \"admin12345@gmail.com\",\r\n    \"password\": \"admin@12345\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/api/user/login"
+			},
+			"response": []
+		}
+	]
+}
