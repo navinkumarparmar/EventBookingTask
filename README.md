@@ -59,6 +59,14 @@ npm start
 
 
 
+## Postman Collection
+### How to Import the Postman Collection:
+1. Download the collection from this repository: [EventBookingCollection.json](./postman/EventBookingCollection.json).
+2. Open Postman.
+3. Click on **Import** in the top-left corner.
+4. Choose **Upload Files** and select the `EventBookingCollection.json` file.
+5. Once imported, you can start testing the API.
+
 ### Prerequisites
 
 Before you begin, ensure you have the following installed on your local machine:
